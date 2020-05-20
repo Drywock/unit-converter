@@ -11,7 +11,7 @@
 
       <v-spacer></v-spacer>
       <v-btn
-        href="/"
+        href="https://github.com/Drywock/unit-converter/tree/master"
         target="_blank"
         text
       >
