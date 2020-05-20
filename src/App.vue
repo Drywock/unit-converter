@@ -1,6 +1,30 @@
 <template>
-  <div id="app">
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+      <div class="d-flex align-center">
+        <h1>Unit Converter</h1>
+      </div>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        href="/"
+        target="_blank"
+        text
+      >
+        <span class="mr-2">Source Code</span>
+        <v-icon>mdi-open-in-new</v-icon>
+      </v-btn>
+    </v-app-bar>
+
+    <v-content>
+      <v-text-field v-model="mainUnitName" />
+    </v-content>
+  </v-app>
 </template>
 
 <script>
@@ -8,9 +32,10 @@
 export default {
   name: 'App',
   components: {
-  }
-}
-</script>
+  },
 
-<style>
-</style>
+  data: () => ({
+    mainUnitName: ""
+  }),
+};
+</script>
